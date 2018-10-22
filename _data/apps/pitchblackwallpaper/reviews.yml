@@ -34,10 +34,15 @@
   date: 2016-11-18
   tags: [media, reviews, quotes, simple, minimalist, aesthetics]
 
-- quote: Try Pitch Black Wallpaper on Android. A black background makes your battery last longer. Why? Because you just don’t need to put energy into something that is dark.
-  cite: Computertaal
-  url: http://computertaal.info/2015/09/07/tecdrop-handige-appjes-voor-dagelijks-gebruik/
+- content: > 
+    <p class="text-center"><img class="img-fluid" src="/assets/images/third/recognition/c/computertaal/computertaal.png" alt="Computertaal"></p>
+    <p><b>Pitch Black Wallpaper reviewed by Computertaal in <span class="tlog-location">Mechelen, Belgium</span>:</b></p>
+    <p><q>Try Pitch Black Wallpaper on Android. A black background makes your battery last longer. Why? Because you just don't need to put energy into something that is dark.</q> (translated from Dutch)</p>
+  url: https://computertaal.info/2015/09/07/tecdrop-handige-appjes-voor-dagelijks-gebruik/
+  domain: computertaal.info
+  title: "Tecdrop: handige appjes voor dagelijks gebruik?"
   date: 2015-09-07
+  tags: [media, reviews, quotes, battery, energy]
 
 - quote: A great app that you'll have no trouble using, and will definitely help with your device performance and battery drain. Don't think about it - try it out!
   cite: Download3K
