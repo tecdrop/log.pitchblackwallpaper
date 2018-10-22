@@ -1,0 +1,43 @@
+---
+---
+
+{% for apps in site.data.apps %}
+    {% assign app = apps[1] %}
+
+    <div class="tqc-quotes msnry-container">
+        {% for review in app.reviews %}
+            {% include post.html type="review" post=review %}
+        {% endfor %}
+
+        {% for testimonial in app.testimonials %}
+            {% include post.html type="testimonial" post=testimonial default_url=app.defaults.testimonial_url %}
+        {% endfor %}
+    </div>
+
+    <!-- <div class="container">
+        {% for extra in app.extras %}
+            {% include extra.html %}
+        {% endfor %}
+
+        <h2>Words and phrases used to describe Pitch Black Wallpaper</h2>
+        <p>
+            {{ app.words | array_to_sentence_string: "" }}.
+        </p>
+
+        <p>Pitch Black Wallpaper has so far been installed <strong>all over the world</strong>, in <strong>{{ app.countries.countries-google-play-installed | size }} countries</strong>:
+            {{ app.countries.countries-google-play-installed | array_to_sentence_string }}.
+        </p>
+
+        <p>Pitch Black Wallpaper has so far been <strong>featured</strong> on the Google Play Home Page or in the Personalization category in <strong>{{ app.countries.countries-google-play-featured | size }} countries</strong>:
+            {{ app.countries.countries-google-play-featured | array_to_sentence_string }}.
+        </p>
+
+        <p>Pitch Black Wallpaper has so far reached <strong>Top Personalization Apps</strong> on Google Play in <strong>{{ app.countries.countries-google-play-top | size }} countries</strong>:
+            {{ app.countries.countries-google-play-top | array_to_sentence_string }}.
+        </p>
+
+    </div> -->
+{% endfor %}
+    
+    
+

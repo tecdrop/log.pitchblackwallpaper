@@ -1,0 +1,53 @@
+<!-- <blockquote class="tqc-quote tqc-{{ include.type }} {% if include.quote.fav %}tqc-fav{% endif %}">
+    <div class="container">
+        <q {% if include.quote.original %}title="{{ include.quote.original }}"{% endif %}>{{ include.quote.quote }}</q>
+        <cite>
+            <a class="tqc-link" href="{{ include.quote.url | default: include.default_url }}" target="_blank">
+                {{ include.quote.cite }}
+            </a>
+            {% if include.quote.lang %}
+                , from {{ include.quote.lang }}
+            {% endif %}
+        </cite>
+    </div>
+</blockquote> -->
+
+<article class="card tlog-post tqc-{{ include.type }}">
+    
+    {% if post.post_thumbnail %}
+        <a href="{{ post.post_thumbnail_url | default: post.post_url }}" target="_blank">
+            <img class="card-img-top" src="{{ post.post_thumbnail }}" alt="{{ post.post_title }}">
+        </a>
+    {% endif %}
+
+    {% if include.post.title %}
+        <header class="card-header tlog-post-header">
+            {% if include.post.domain %}
+                <p class="font-weight-bold">
+                    <a href="{{ include.post.domain_url | default: include.post.url }}" target="_blank">{{ include.post.domain }}</a>
+                </p>
+            {% endif %}
+            <h2 class="card-title tlog-post-title">
+                <a href="{{ include.post.title_url | default: include.post.url }}" target="_blank">{{ include.post.title }}</a>
+            </h2>
+        </header>
+    {% endif %}
+
+    <main class="card-body tlog-post-content">
+        {% if include.post.quote %}
+            {% include post-quote.html %}
+        {% endif %}
+
+        {% if include.post.content %}
+            {{ include.post.content }}
+        {% endif %}
+    </main>
+
+    <footer class="card-footer bg-transparent tlog-post-footer">
+        <span>
+            {% for tag in include.post.tags %}
+                <a href="{{ site.url }}{{ site.tag_page }}#{{ tag | slugify }}">#{{ tag }}</a>
+            {% endfor %}
+        </span>
+    </footer>    
+</article>

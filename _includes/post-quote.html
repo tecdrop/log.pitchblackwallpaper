@@ -1,0 +1,24 @@
+<blockquote class="tlog-quote">
+
+    {% assign size = include.post.quote.size %}
+    {% if size < 100 %}
+    {% assign size_class = "short" %}
+    {% elsif size < 500 %}
+    {% assign size_class = "medium" %}
+    {% else % }
+    {% assign size_class = "long" %}
+    {% endif %}
+
+    <div class="tlog-quote__content tlog-size--{{ size_class }}">{{ include.post.quote }}</div>
+
+    <cite class="tlog-quote__cite">
+        {% assign url = include.post.url | default: include.default_url %}
+        {{ include.post.cite | replace: "<a>", '<a href="url" target="_blank">' | replace: 'url', url }}
+        {% if include.post.lang %}
+            <span class="tlog-quote__lang">(translated from {{ include.post.lang }})</span>
+        {% endif %}
+        <!-- <a href="{{ include.post.url | default: include.default_url }}" target="_blank">
+            <svg class="tlog-quote__link"><use xlink:href="/assets/images/icons/icons.svg#external"></use></svg>
+        </a> -->
+    </cite>
+</blockquote>

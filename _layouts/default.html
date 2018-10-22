@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About Pitch Black Wallpaper</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Pitch Black Wallpaper</h1>
+            </div>
+        </div>
+
+        <!-- <div class="tqc-site-header">
+            <h1 class="tqc-page-title"><a href="/">About Pitch Black Wallpaper</a></h1>
+            <i class="fa fa-random" id="shuffle-icon" aria-hidden="true"></i>
+        </div>
+        <div class="tqc-site-subheader">
+            <h2 class="tqc-page-subtitle">A million downloads Android app that sets a black wallpaper. Really? What
+                people are saying in its defense.</h2>
+        </div> -->
+    </header>
+
+    <div class="container">
+        {{ content }}
+    </div>
+
+    <footer class="tqc-site-footer">
+        <output id="review-counter" title="Reviews">0</output> + <output id="testimonial-counter" title="Testimonials">0</output>
+        = <output id="total-counter" title="Quotes">0</output>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <script>
+        const msnryContainer = document.querySelector(".msnry-container");
+        imagesLoaded(msnryContainer, () => {
+            var msnry = new Masonry(msnryContainer, {
+                itemSelector: '.card',
+                fitWidth: true
+            });
+        });
+    </script>
+
+    <script src="/assets/scripts/main.js"></script>
+
+</body>
+
+</html>
