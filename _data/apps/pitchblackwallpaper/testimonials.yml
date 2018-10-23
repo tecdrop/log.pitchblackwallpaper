@@ -477,6 +477,18 @@
   tags: [user reviews, quotes]
   int: c, words
 
+- quote: Thnx guys
+  cite: ★★★★★ Emad Taha on <a>Google Play</a>
+  date: 2017-06-27
+  tags: [user reviews, quotes, thanks]
+  int: words
+
+- quote: Awesome app.
+  cite: ★★★★★ Pankaj Kumar on <a>Google Play</a>
+  date: 2017-06-24
+  tags: [user reviews, quotes, awesome]
+  int: words
+
 - quote: 5 stars is little deserves more
   cite: ★★★★★ Guillermo Bracero on <a>Google Play</a>
   lang: Spanish
@@ -484,6 +496,12 @@
   tags: [user reviews, quotes]
   fav: true
   int: c
+
+- quote: Best black
+  cite: ★★★★★ ash KAR on <a>Google Play</a>
+  date: 2017-06-22
+  tags: [user reviews, quotes, best]
+  int: words
 
 - quote: The search for wallpapers has ended.
   cite: ★★★★★ Antonio Galan on <a>Google Play</a>
@@ -499,6 +517,18 @@
   tags: [user reviews, quotes]
   int: c
 
+- quote: It's lightweight, simple, does not consume battery and does not require permissions, it's just great.
+  cite: ★★★★★ Beatrix Stones on <a>Google Play</a>
+  date: 2017-06-19
+  tags: [user reviews, quotes, lightweight, simple, battery, permissions, great]
+  int: words
+
+- quote: Awesome, just what I needed.
+  cite: ★★★★★ Kirat Chatterjee on <a>Google Play</a>
+  date: 2017-06-19
+  tags: [user reviews, quotes, awesome, need]
+  int: words
+
 - quote: Nice job dev.. Been using for a long time.
   cite: ★★★★★ Andre khalil on <a>Google Play</a>
   date: 2017-06-17
@@ -510,6 +540,17 @@
   date: 2017-06-08
   tags: [user reviews, quotes]
   int: c, words
+
+- quote: Blackjack
+  cite: ★★★★★ Asif Waheed on <a>Google Play</a>
+  date: 2017-06-02
+  tags: [user reviews, quotes, blackjack]
+
+- quote: Black is awesome
+  cite: ★★★★★ Tan Szekuan on <a>Google Play</a>
+  date: 2017-06-01
+  tags: [user reviews, quotes, awesome]
+  int: words
 
 - quote: The best there is
   cite: ★★★★★ Valmir Ramos Duarte on <a>Google Play</a>
@@ -524,6 +565,13 @@
   tags: [user reviews, quotes]
   fav: true
   int: c
+
+- quote: Let's save battery on long trips!
+  cite: ★★★★★ Aelfy Carcini on <a>Google Play</a>
+  lang: Spanish
+  date: 2017-05-21
+  tags: [user reviews, quotes, battery, trips]
+  int: words
 
 - quote: One wallpaper to rule them all
   cite: ★★★★★ Vladimir Molitvenik on <a>Google Play</a>
@@ -544,6 +592,12 @@
   date: 2017-05-12
   tags: [user reviews, quotes]
   int: c
+
+- quote: Great App. A vital energy saving App for any high usage mobile. ... Also, a very responsive developer when emailed.
+  cite: ★★★★★ Cool Cmsc on <a>Google Play</a>
+  date: 2017-05-12
+  tags: [user reviews, quotes, great, vital, energy, responsive]
+  int: words
 
 - quote: I love how simple this app is
   cite: ★★★★★ Ficsor Tamás Zoltán on <a>Google Play</a>
